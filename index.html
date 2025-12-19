@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .redirect-notice {
+            background: #f0f8ff;
+            border: 1px solid #0066cc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 User Dashboard System</h1>
+    
+    <div class="redirect-notice">
+        <h2>Welcome to the User Dashboard System!</h2>
+        <p>This is a full-stack web application with React frontend and FastAPI backend.</p>
+        <p><strong>The main application will be available at the GitHub Pages URL once deployed.</strong></p>
+    </div>
+
+    <h2>📋 Features</h2>
+    <ul>
+        <li>User Authentication (Login/Signup)</li>
+        <li>Protected Dashboard</li>
+        <li>Password Reset via Email</li>
+        <li>Responsive Design</li>
+        <li>Real-time API Status</li>
+    </ul>
+
+    <h2>🛠️ Tech Stack</h2>
+    <p><strong>Frontend:</strong> React, Redux Toolkit, React Router, Vite</p>
+    <p><strong>Backend:</strong> FastAPI, SQLAlchemy, JWT Authentication</p>
+
+    <h2>🚀 Quick Links</h2>
+    <a href="https://github.com/yourusername/User-Dashboard-System" class="btn">View Source Code</a>
+    <a href="#" class="btn" onclick="alert('Update this link with your deployed app URL')">Live Application</a>
+
+    <script>
+        // Auto-redirect to the built app if it exists
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            // Check if we're on GitHub Pages and try to redirect to the built app
+            const currentUrl = window.location.href;
+            if (currentUrl.includes('github.io')) {
+                const appUrl = currentUrl.replace(/\/$/, '') + '/';
+                // You can uncomment this line once your app is deployed
+                // window.location.href = appUrl;
+            }
+        }
+    </script>
+</body>
+</html>
