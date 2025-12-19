@@ -3,4 +3,8 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
+  base: "/User-Dashboard-System/",
+  build: {
+    outDir: "dist",
+  },
 });
